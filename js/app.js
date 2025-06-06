@@ -267,4 +267,14 @@ window.addEventListener('DOMContentLoaded', function() {
     document.getElementById('btnThemNV').addEventListener('click', addEmployee);
     document.getElementById('btnCapNhat').addEventListener('click', updateEmployee);
     document.getElementById('btnTimNV').addEventListener('click', searchByType);
+    document.getElementById('btnDong').addEventListener('click', resetForm);
+});
+
+// Alternative jQuery ready function to ensure events are bound
+$(document).ready(function() {
+    $('#btnThemNV').on('click', addEmployee);
+    $('#btnCapNhat').on('click', updateEmployee);
+    $('#btnTimNV').on('click', searchByType);
+    $('#btnThem').on('click', resetForm);
+    $('#btnDong').on('click', resetForm);
 });
